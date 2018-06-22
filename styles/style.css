@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 736px)
+{
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
