@@ -63,6 +63,8 @@ body {
 	color: yellow; /*TODO: change color*/
 }
 
+
+
 .baner {
 	background-color: #FF6A00;
 	grid-area: baner;
@@ -96,23 +98,57 @@ body {
 
 
 .whoami {
-	background-color: #FFD800;
+	background-color: #7F3300;
 	grid-area: whoami;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
 }
 
-.whoami img {
+.whoami .title {
+	font-family: customFont;
+	font-size: 60px;
+	color: yellow;
+	opacity: 0.8;
+}
+
+.whoami .subtitle {
+	font-family: customFont;
+	font-size: 40px;
+	color: yellow;
+	opacity: 0.6;
+}
+
+.whoami .article {
+	padding-top: 10px;
+}
+
+.whoami .article img {
 	width: 200px;
-	height: 250px;
-	padding: 20px;
-
+	height: 250px;	
+	float: left;
+	padding-right: 10px;
 }
 
+.whoami .article div {
+	/*padding-left: 230px;*/
+	padding-top: 15px;
+}
 
+.whoami .article div a {
+	padding-left: 20px;
+	/*padding-top: 25px;*/
+	font-family: customFont;
+	color: yellow;
+	opacity: 0.3;
+}
 
-
+.whoami .article div a:hover {
+	opacity: 0.9;
+}
 
 .skills {
-	background-color: #7F3300;
+	background-color: #FFD800;
 	grid-area: skills;
 }
 .offer {
