@@ -1,13 +1,61 @@
 * {
 	margin: 0;
 	padding: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .grid {
+	min-height: 100%;
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"kontakt kontakt"
+	"baner baner"
+	"whoami whoami"
+	"skills portfolio"
+	"offer offer"
+	"footer footer";
+	grid-template-rows: 100px 1fr 1fr 1fr 1fr 80px;
 }
 
+.kontakt {
+	background-color: #0094FF;
+	grid-area: kontakt;
+}
+
+.baner {
+	background-color: #FF6A00;
+	grid-area: baner;
+}
+
+.whoami {
+	background-color: #FFD800;
+	grid-area: whoami;
+}
+
+.skills {
+	background-color: #7F3300;
+	grid-area: skills;
+}
+
+.offer {
+	background-color: #FF00DC;
+	grid-area: offer;
+}
+
+.portfolio {
+	background-color: #00FF21;
+	grid-area: portfolio;
+}
+
+.footer {
+	background-color: #FF0000;
+	grid-area: footer;
+}
+
+/*this one is rendering*/
+/*
 @media screen and (min-width: 736px)
 {
 	.grid {
@@ -15,3 +63,4 @@
 		grid-template-columns: 1fr;
 	}
 }
+*/
