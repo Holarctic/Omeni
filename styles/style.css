@@ -15,6 +15,12 @@ body {
 	"footer";
 }
 
+@font-face {
+    font-family: customFont;
+    src: url(fonts/fffforwa.ttf);
+    /*font-weight: bold;*/
+}
+
 .grid-content {
 	grid-area: content;
 	display: grid;
@@ -23,8 +29,8 @@ body {
 	grid-template-areas: 
 	". contact contact ."
 	". baner baner ."
-	". whoami whoami ."
-	". skills portfolio ."
+	". whoami skills ."
+	". portfolio portfolio ."
 	". offer offer ."
 	". . . .";
 }
@@ -57,8 +63,6 @@ body {
 	color: yellow; /*TODO: change color*/
 }
 
-
-
 .baner {
 	background-color: #FF6A00;
 	grid-area: baner;
@@ -77,8 +81,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: yellow;
-    font-family: sans-serif;
-    font-size: 85px;
+    font-family: customFont;
+    font-size: 60px;
     font-style: normal;
     opacity: 0.6;
 }
@@ -88,10 +92,25 @@ body {
 	cursor: default;
 }
 
+
+
+
 .whoami {
 	background-color: #FFD800;
 	grid-area: whoami;
 }
+
+.whoami img {
+	width: 200px;
+	height: 250px;
+	padding: 20px;
+
+}
+
+
+
+
+
 .skills {
 	background-color: #7F3300;
 	grid-area: skills;
