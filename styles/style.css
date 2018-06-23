@@ -2,12 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
-
 html {
 	height: 100%;
 	background-color: #ccc;
 }
-
 body {
 	min-height: 100%;
 	display: grid;
@@ -16,7 +14,6 @@ body {
 	"content"
 	"footer";
 }
-
 .grid-content {
 	grid-area: content;
 	display: grid;
@@ -30,37 +27,54 @@ body {
 	". offer offer ."
 	". . . .";
 }
-
 .contact {
 	background-color:  #0094FF;
 	grid-area: contact;
+	height: 60px;
+	padding: 5px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.social-media {
+	margin-right: auto;
+	padding: 10px;
+	padding-left: 40px;
 }
 
+.info {
+	padding: 10px;
+}
+
+.contact .email a {
+	color: #000;
+	text-decoration: none;
+}
+
+.contact .email a:hover {
+	color: yellow; /*TODO: change color*/
+}
 .baner {
 	background-color: #FF6A00;
 	grid-area: baner;
 }
-
 .whoami {
 	background-color: #FFD800;
 	grid-area: whoami;
 }
-
 .skills {
 	background-color: #7F3300;
 	grid-area: skills;
 }
-
 .offer {
 	background-color: #FF00DC;
 	grid-area: offer;
 }
-
 .portfolio {
 	background-color: #00FF21;
 	grid-area: portfolio;
 }
-
 .footer {
 	background-color: #FF0000;
 	grid-area: footer;
