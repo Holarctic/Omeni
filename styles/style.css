@@ -215,7 +215,7 @@ body {
 
 
 .portfolio {
-	background-color: #0AC321;
+	background-color: #A26000;
 	grid-area: portfolio;
 	padding: 10px;
 	display: flex;
@@ -224,8 +224,8 @@ body {
 
 .portfolio .title {
 	font-size: 5vw;
-	color: #FF00DC;
-	opacity: 0.6;
+	color: #E8BA00;
+	opacity: 1;
 }
 
 .things {
@@ -238,31 +238,54 @@ body {
 
 .thing {
 	background-color: #555;
-	width: 150px;
+	width: 170px;
 	height: 100px;
-	color: #DB06BE;
 	text-decoration: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-family: customFont;
-	font-size: 30px;
-	border-style: double;
-	border-color: #999;
-	border-width: 10px;	
+	font-size: 25px;
+	color: #FFD800;
+	border-color: #C58D00;
+	border-width: 10px;
+	border-radius: 15px;
 }
 
-.thing1 {
-	color: red;
-}
 
 .thing span {
 	opacity: 0.7;
 }
 
 .offer {
-	background-color: #DB06BE;
+	background-color: #e8ba00;
 	grid-area: offer;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 15px;
+	align-items: center;
+}
+
+.offer .title {
+	width: 35%;
+	color: #7F3300;
+	opacity: 1;
+}
+
+.offer .list {
+	-webkit-column-count: 4; 
+    -moz-column-count: 4;
+    column-count: 4;
+    list-style-type: none;
+	padding-right: 100px;
+	font-size: 20px;
+	opacity: 0.6;
+	color: #7F3300;
+}
+
+.list li {
+	padding: 20px;
 }
 
 .footer {
