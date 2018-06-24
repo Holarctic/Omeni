@@ -204,8 +204,17 @@ body {
 	padding-top: 15px;
 }
 
+.percent:before {
+	content: '95%';
+}
 
-
+/*.percent:before {
+	display: none;
+}
+*/
+.percent:hover:before {
+	content: 'best time: 97s';
+}
 
 .offer {
 	background-color: #FF00DC;
