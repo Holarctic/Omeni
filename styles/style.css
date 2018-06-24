@@ -16,9 +16,9 @@ body {
 }
 
 @font-face {
-    font-family: customFont;
-    src: url(fonts/fffforwa.ttf);
-    /*font-weight: bold;*/
+	font-family: customFont;
+	src: url(fonts/fffforwa.ttf);
+	/*font-weight: bold;*/
 }
 
 .grid-content {
@@ -79,15 +79,15 @@ body {
 }
 
 .baner .quote {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: yellow;
-    font-family: customFont;
-    font-size: 60px;
-    font-style: normal;
-    opacity: 0.6;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: yellow;
+	font-family: customFont;
+	font-size: 60px;
+	font-style: normal;
+	opacity: 0.6;
 }
 
 .baner .quote:hover {
@@ -229,11 +229,13 @@ body {
 }
 
 .things {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding-top: 30px;
+
 }
 
 .thing {
@@ -275,9 +277,9 @@ body {
 
 .offer .list {
 	-webkit-column-count: 4; 
-    -moz-column-count: 4;
-    column-count: 4;
-    list-style-type: none;
+	-moz-column-count: 4;
+	column-count: 4;
+	list-style-type: none;
 	padding-right: 100px;
 	font-size: 20px;
 	opacity: 0.6;
@@ -311,4 +313,67 @@ body {
 
 .contact-info .email a {
 	color: #888;
+}
+
+@media screen and (max-width: 736px) {
+
+	.grid-content {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, auto) 1fr;
+		grid-template-areas: 
+		"contact"
+		"baner"
+		"whoami"
+		"skills"
+		"portfolio"
+		"offer"
+		".";
+	}
+
+	.things {
+		flex-direction: column;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-top: 30px;
+	}
+	.thing {
+		margin: 10px;
+	}
+
+	.offer {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.offer .list {
+		-webkit-column-count: 2; 
+		-moz-column-count: 2;
+		column-count: 2;
+		list-style-type: none;
+	}
+	.baner .quote {
+		font-size: 10vw;
+	}
+	.footer {
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 20px;
+	}
+	.footer .contact-info {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer .social-media {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 10px;
+		padding-bottom: 15px;
+	}
+	.footer .copyright {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 }
