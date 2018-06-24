@@ -70,6 +70,7 @@ body {
 	grid-area: baner;
 	position: relative;
 	text-align: center;
+	height: 300px;
 }
 
 .baner img {
@@ -208,22 +209,62 @@ body {
 	content: '95%';
 }
 
-/*.percent:before {
-	display: none;
-}
-*/
 .percent:hover:before {
 	content: 'best time: 97s';
 }
 
+
+.portfolio {
+	background-color: #0AC321;
+	grid-area: portfolio;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio .title {
+	font-size: 5vw;
+	color: #FF00DC;
+	opacity: 0.6;
+}
+
+.things {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+.thing {
+	background-color: #555;
+	width: 150px;
+	height: 100px;
+	color: #DB06BE;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: customFont;
+	font-size: 30px;
+	border-style: double;
+	border-color: #999;
+	border-width: 10px;	
+}
+
+.thing1 {
+	color: red;
+}
+
+.thing span {
+	opacity: 0.7;
+}
+
 .offer {
-	background-color: #FF00DC;
+	background-color: #DB06BE;
 	grid-area: offer;
 }
-.portfolio {
-	background-color: #00FF21;
-	grid-area: portfolio;
-}
+
 .footer {
 	background-color: #FF0000;
 	grid-area: footer;
