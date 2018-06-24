@@ -94,9 +94,6 @@ body {
 	cursor: default;
 }
 
-
-
-
 .whoami {
 	background-color: #7F3300;
 	grid-area: whoami;
@@ -147,10 +144,49 @@ body {
 	opacity: 0.9;
 }
 
+
+
+
+
 .skills {
 	background-color: #FFD800;
 	grid-area: skills;
 }
+
+.bar {
+	width: 75%;
+	height: 20px;
+	position: relative;
+	background: #555;
+	border-radius: 25px;
+	padding: 3px;
+}
+
+.bar .filler {
+	display: block;
+	height: 100%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: rgb(43,194,83);
+}
+
+.line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 10px;
+	/*padding-left: 10px;*/
+	/*padding-right: 10px;*/
+}
+
+
+
+
+
+
+
 .offer {
 	background-color: #FF00DC;
 	grid-area: offer;
