@@ -94,6 +94,8 @@ body {
 	cursor: default;
 }
 
+
+
 .whoami {
 	background-color: #7F3300;
 	grid-area: whoami;
@@ -102,18 +104,24 @@ body {
 	padding: 10px;
 }
 
-.whoami .title {
+.title {
 	font-family: customFont;
 	font-size: 60px;
-	color: yellow;
 	opacity: 0.8;
 }
 
-.whoami .subtitle {
+.whoami .title {
+	color: yellow;
+}
+
+.subtitle {
 	font-family: customFont;
 	font-size: 40px;
-	color: yellow;
 	opacity: 0.6;
+}
+
+.whoami .subtitle {
+	color: yellow;
 }
 
 .whoami .article {
@@ -151,6 +159,9 @@ body {
 .skills {
 	background-color: #FFD800;
 	grid-area: skills;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
 }
 
 .bar {
@@ -169,7 +180,7 @@ body {
 	border-bottom-right-radius: 8px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	background-color: rgb(43,194,83);
+	background-color: #9b5700;
 }
 
 .line {
@@ -181,8 +192,17 @@ body {
 	/*padding-right: 10px;*/
 }
 
+.skills .title {
+	color: #7F3300;
+}
 
+.skills .subtitle {
+	color: #7F3300;
+}
 
+.skills .skills-list {
+	padding-top: 15px;
+}
 
 
 
